@@ -1,0 +1,33 @@
+#chatbox {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#chat-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#message-input {
+    flex: 1;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#send-button {
+    padding: 5px 10px;
+}
