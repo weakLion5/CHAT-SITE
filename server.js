@@ -13,9 +13,6 @@ let chatMessages = [];
 io.on('connection', (socket) => {
   console.log('A user connected');
 
-  // Mengirim pesan saat koneksi terjalin
-  socket.emit('chatMessages', chatMessages);
-
   // Menerima pesan dari pengguna dan menyimpannya
   socket.on('sendMessage', (message) => {
     chatMessages.push(message);
